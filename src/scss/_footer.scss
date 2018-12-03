@@ -1,0 +1,13 @@
+footer {
+  height: 10vh;
+  background-color: $color-6;
+  position: relative;
+  p {
+    color: $color-white;
+    font-family: $font-family-article;
+    font-size: $font-regular;
+    line-height: 10vh;
+    letter-spacing: 2px;
+    padding-left: 50px;
+  }
+}

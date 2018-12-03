@@ -1,0 +1,125 @@
+.section-articles {
+  background: url("../images/watch14.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.section-articles--bgc {
+  background-color: $color-2;
+  height: 100vh;
+  opacity: 0.7;
+}
+.section-gallery {
+  background-color: $color-3;
+  height: 100vh;
+  h2 {
+    text-align: center;
+    font-size: $font-big;
+    font-family: $font-family-title;
+    text-transform: uppercase;
+    color: $color-1;
+    padding: 40px 0 0 0;
+    &:after {
+      content: '';
+      display: block;
+      background-color: $color-white;
+      height: 0.2rem;
+      width: 16rem;
+      margin: auto;
+    } 
+  }
+}
+.section-about {
+  background-color: $color-4;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  a {
+    img {
+      width: 100%;
+      border: 2px solid $color-white;
+    }
+  }
+  h3 {
+    text-align: center;
+    font-size: $font-big;
+    font-family: $font-family-title;
+    text-transform: uppercase;
+    color: $color-1;
+    padding: 10px 0;
+    &:after {
+      content: '';
+      display: block;
+      background-color: $color-white;
+      height: 0.2rem;
+      width: 10rem;
+      margin: auto;
+    } 
+  }
+  p {
+    font-family: $font-family-article;
+    font-size: $font-regular;
+    color: $color-black;
+    padding: 20px 40px;
+    text-align: justify;
+    line-height: 1.5;
+  }
+}
+.wrapper-2 {
+  transform: scale(0);
+  transition: 1s;
+}
+.wrapper-2.active {
+  transform: scale(1);
+}
+.wrapper-1, 
+.wrapper-2 {
+  flex-basis: 45%;
+}
+.section-contact {
+  background-color: $color-5;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+.wrapper-3,
+.wrapper-4,
+.wrapper-5 {
+	width: 30%;
+	height: 50%;
+  font-family: $font-family-article;
+	h3 {
+		text-transform: uppercase;
+    font-size: $font-medium;
+    font-family: $font-family-title;
+		font-weight: 400;
+    margin: 0 0 20px 0;
+    color: $color-3;
+    &:after {
+      content: '';
+      display: block;
+      background-color: $color-white;
+      height: 0.1rem;
+      width: 8rem;
+      margin: auto;
+    } 
+	}
+	ul {
+		list-style: none;
+	}
+	li {
+		padding: 10px 0;
+		font-size: $font-regular;
+		span {
+			color: $color-3;
+		}
+	}
+	a {
+		text-decoration: none;
+		color: $color-3;
+	}
+}

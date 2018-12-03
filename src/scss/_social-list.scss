@@ -1,0 +1,15 @@
+.social__list {
+	list-style: none;
+	position: absolute;
+	right: 0;
+  top: calc(50% - 0.7rem);
+	li {
+		display: inline-block;
+		padding: 0 10px;
+	}
+	i {
+		color: $color-white;
+    font-size: $font-medium;
+    padding-right: 50px;
+	}
+}

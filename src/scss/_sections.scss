@@ -109,17 +109,17 @@
     } 
 	}
 	ul {
-		list-style: none;
-	}
-	li {
-		padding: 10px 0;
-		font-size: $font-regular;
-		span {
-			color: $color-3;
-		}
-	}
-	a {
-		text-decoration: none;
-		color: $color-3;
-	}
+    list-style: none;
+  }
+  li {
+    padding: 10px 0;
+    font-size: $font-regular;
+    span {
+      color: $color-3;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: $color-3;
+  }
 }

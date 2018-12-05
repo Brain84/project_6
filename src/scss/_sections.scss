@@ -89,14 +89,14 @@
 .wrapper-3,
 .wrapper-4,
 .wrapper-5 {
-	width: 30%;
-	height: 50%;
+  width: 30%;
+  height: 50%;
   font-family: $font-family-article;
-	h3 {
-		text-transform: uppercase;
+  h3 {
+    text-transform: uppercase;
     font-size: $font-medium;
     font-family: $font-family-title;
-		font-weight: 400;
+    font-weight: 400;
     margin: 0 0 20px 0;
     color: $color-3;
     &:after {
@@ -107,8 +107,8 @@
       width: 8rem;
       margin: auto;
     } 
-	}
-	ul {
+  }
+  ul {
     list-style: none;
   }
   li {

@@ -1,3 +1,10 @@
+//open nav list
+$(function () {
+  $('.js-hamburger').on('click', function () {
+    $('.nav__list li a').toggleClass('is-open-menu');
+  });
+});
+
 //hide and show elements
 $(document).on('scroll', function () {
   const windowHeight = $(window).height();
@@ -23,4 +30,22 @@ $(document).on('scroll', function () {
     $('article').removeClass('active');
     $('.wrapper-2').removeClass('active');
   }
+});
+
+//scroll to a section
+$(function () {
+  $('a[href*="#"]:not([href="#"])').click(function () {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+
+      let target = $(this.hash);
+
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
 });

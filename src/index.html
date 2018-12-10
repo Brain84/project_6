@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Watch</title>
+  <title>The Watch</title>
   <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Roboto:400,700&amp;subset=latin-ext" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="/node_modules/lightbox2/dist/css/lightbox.css" rel="stylesheet">
@@ -13,7 +13,7 @@
 
 <body>
   <div class="container">
-    <header>
+    <header id="home">
       <a href="#" class="header__img--gray">
         <img src="./images/watch2a.png" alt="watch gray">
       </a>
@@ -21,10 +21,35 @@
         <img src="./images/watch2b.png" alt="watch color">
       </a>
       <h1 class="header__title">It's time</h1>
+      <nav class="header__nav">
+        <div class="wrapper-nav">
+          <ul class="nav__list">
+            <li>
+              <a href="#home" class="nav__link-1">Home</a>
+            </li>
+            <li>
+              <a href="#news" class="nav__link-2">News</a>
+            </li>
+            <li>
+              <a href="#gallery" class="nav__link-3">Gallery</a>
+            </li>
+            <li>
+              <a href="#about" class="nav__link-4">About us</a>
+            </li>
+            <li>
+              <a href="#contact" class="nav__link-5">Contact</a>
+            </li>
+          </ul>
+          <div id="burger-check" class="nav__hamburger">
+            <input class="hamburger__input--check js-hamburger" type="checkbox">
+            <span class="hamburger__span"></span>
+          </div>
+        </div>
+      </nav>
     </header>
   </div>
   <div class="container">
-    <section class="section-articles">
+    <section id="news" class="section-articles">
       <div class="section-articles--bgc"></div>
       <article class="article-1">
         <a href="#" class="article-1__link" title="Read more">
@@ -49,7 +74,7 @@
     </section>
   </div>
   <div class="container">
-    <section class="section-gallery">
+    <section id="gallery" class="section-gallery">
       <h2 class="section-gallery__title">The best watches</h2>
       <div class="gallery">
         <a data-lightbox="image-1" href="./images/watch4a.jpg" class="gallery__link-1">
@@ -71,7 +96,7 @@
     </section>
   </div>
   <div class="container">
-    <section class="section-about">
+    <section id="about" class="section-about">
       <div class="wrapper-1">
         <a href="#" class="about__link">
           <img src="./images/watch13.jpg" class="about__img" alt="the watch">
@@ -96,7 +121,7 @@
     </section>
   </div>
   <div class="container">
-    <section class="section-contact">
+    <section id="contact" class="section-contact">
       <div class="wrapper-3">
         <h3 class="contact__title-1">Company</h3>
         <ul class="contact__list-1">

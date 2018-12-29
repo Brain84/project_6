@@ -1,10 +1,13 @@
 @media screen and (max-width: 320px) and (orientation: portrait) {
-	nav {
+  nav {
     position: static;
     .nav__list {
       li {
         width: 100%;
       }
     }
+  }
+  .header__title {
+    font-size: $font-big;
   }
 }

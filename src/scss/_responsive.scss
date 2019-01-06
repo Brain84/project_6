@@ -10,4 +10,39 @@
   .header__title {
     font-size: $font-big;
   }
+  .header__img--gray {
+    img {
+      top: 30%;
+      transform: translate(-50%, 0);
+      height: 30%;
+      width: 80%;
+    }
+  }
+  .header__img--color {
+    img {
+      height: 15%;
+    }
+  }
+  .section-articles {
+    background: none;
+    width: 100vw;
+    min-height: 100%;
+  }
+  .section-articles--bgc {
+    display: none;
+  }
+  .section-articles {
+    article {
+      position: static;
+      width: 90%;
+      height: 80vh;
+      margin: 5px;
+      transition: 0;
+      img {
+        width: 100%;
+        height: 15rem;
+        transition: 0;
+      }
+    }
+  }
 }

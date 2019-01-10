@@ -31,4 +31,18 @@
   .section-articles--bgc {
     display: none;
   }
+  .section-articles {
+    article {
+      position: static;
+      width: 90%;
+      height: 80vh;
+      margin: 5px;
+      transition: 0;
+      img {
+        width: 100%;
+        height: 15rem;
+        transition: 0;
+      }
+    }
+  }
 }

@@ -1,32 +1,175 @@
-@media screen and (max-width: 320px) and (orientation: portrait) {
+@media screen and (max-width: 1024px) {
+  .header__img--gray {
+    img {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 90%;
+    }
+  }
+  .gallery {
+    min-height: 60%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .header__img--gray {
+    img {
+      width: 85vw;
+      height: 60vw;
+    }
+  }
+  .section-articles {
+    article {
+      width: 35%;
+      height: auto;
+    }
+  } 
+}
+@media screen and (max-width: 767px) and (orientation: landscape){
+  .header__img--gray {
+    img {
+      width: 85vw;
+      height: 50vw;
+    }
+  }
+  .header__title {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .section-articles {
+    height: 140vh;
+    article {
+      width: 37%;
+      top: 10%;
+      p {
+        padding: 10px;
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .section-articles--bgc {
+    height: 100%;
+  }
+  .section-about {
+    height: auto;
+    p {
+      font-size: 1.5rem;
+      padding: 10px 0;
+    }
+  }
+  .section-contact {
+    height: auto;
+    padding: 30px 0;
+  }
+}
+@media screen and (max-width: 675px) {
   nav {
-    position: static;
     .nav__list {
       li {
-        width: 100%;
+        width: 17%;
+        a {
+          font-size: 1.1rem;
+        }
       }
     }
   }
   .header__title {
-    font-size: $font-big;
+    width: 100%;
+    text-align: center;
+  }
+  .section-articles {
+    height: 140vh;
+    article {
+      width: 45%;
+      top: 5%;
+      h3 {
+        font-size: $font-xm;
+        padding: 10px 0;
+      }
+      p {
+        padding: 10px 5px;
+      }
+    }
+  }
+  .section-articles--bgc {
+    height: 100%;
+  }
+  .article-1.active {
+    left: 2vw;
+  }
+  .article-2.active {
+    right: 2vw;
+  }
+  .section-gallery {
+    height: 120vh;
+  }
+  .section-about {
+    flex-direction: column;
+    height: auto;
+    img {
+      margin-top: 30px;
+    }
+    p {
+      padding: 10px 5px;
+    }
+  }
+  .section-contact {
+    h3 {
+      font-size: 2rem;
+    }
+  }
+  footer {
+    height: auto;
+    p {
+      padding-left: 0;
+      text-align: center;
+    }
+  }
+  .social__list {
+    position: static;
+    text-align: center;
+    li {
+      padding: 0 20px 10px 20px;
+    }
+    i {
+      padding: 0;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  nav {
+    position: static;
+    .nav__list {
+      li {
+        width: 100%;    
+        padding: 0;
+        a {
+          height: 60px;
+          line-height: 52px;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+  .header__title {
+    font-size: 8rem;
+    width: 100%;
+    text-align: center;
   }
   .header__img--gray {
     img {
-      top: 30%;
-      transform: translate(-50%, 0);
-      height: 30%;
-      width: 80%;
-    }
-  }
-  .header__img--color {
-    img {
-      height: 15%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      height: 35%;
+      width: 90%;
     }
   }
   .section-articles {
     background: none;
     width: 100vw;
-    min-height: 100%;
+    height: auto;
   }
   .section-articles--bgc {
     display: none;
@@ -34,9 +177,8 @@
   .section-articles {
     article {
       position: static;
-      width: 90%;
-      height: 80vh;
-      margin: 5px;
+      width: 100%;
+      padding: 5px;
       transition: 0;
       img {
         width: 100%;
@@ -62,36 +204,142 @@
     left: 0;
   }
   .section-gallery {
-    min-height: 200vh;
+    height: auto;
+    padding-bottom: 10px;
+    h2 {
+      padding-bottom: 20px;
+    }
   }
   .gallery {
-    left: 0;
-    top: 2%;
+    position: static;
     transform: translate(0, 0);
+    height: auto;
+    width: 100%;
     a {
       position: static;
     }
     img {
-      position: static;
-      width: 100%;
+      display: block;
+      right: 0;
+      width: 75%;
       height: 30%;
+      margin: auto;
       box-shadow: 0 0 3px 3px $color-white; 
     }
   }
-  .gallery__link-1 {
+  .section-about {
+    flex-direction: column;
+    justify-content: space-around;
+    height: auto;
+  }
+  .wrapper-1, 
+  .wrapper-2 {
+    flex-basis: 0;
+    transform: none;
+  }
+  .section-contact {
+    flex-direction: column;
+    height: auto;
+    padding-top: 20px;
+  }
+  .wrapper-3,
+  .wrapper-4,
+  .wrapper-5 {
+    width: 100%;
+    padding-bottom: 30px;
+    h3 {
+      width: 100%;
+    }
+  }
+  footer {
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .header__title {
+    font-size: 5rem;
+  }
+  .section-articles {
+    background: none;
+    width: 100vw;
+    height: auto;
+  }
+  .section-articles--bgc {
+    display: none;
+  }
+  .section-articles {
+    article {
+      position: static;
+      width: 100%;
+      height: auto;
+      padding: 5px;
+      transition: 0;
+      img {
+        width: 100%;
+        height: 15rem;
+        transition: 0;
+      }
+    }
+  }
+  .article-1 {
+    transform: none;
+  }
+  .article-2 {
+    transform: none;
+  }
+  .article-1.active {
+    transform: none;
     left: 0;
     top: 0;
   }
-  .gallery__link-2 {
+  .article-2.active {
+    transform: none;
+    right: 0;
     left: 0;
-    top: 0;
   }
-  .gallery__link-3 { 
-    left: 0;
-    bottom: 0;
+  .section-gallery {
+    height: auto;
+    padding-bottom: 10px;
+    h2 {
+      padding-bottom: 20px;
+    }
   }
-  .gallery__link-4 {
-    left:0;
-    bottom: 0;
+  .gallery {
+    position: static;
+    transform: translate(0, 0);
+    height: auto;
+    width: 100%;
+    a {
+      position: static;
+    }
+  }
+  .section-about {
+    flex-direction: column;
+    justify-content: space-around;
+    height: auto;
+  }
+  .wrapper-1 {
+    padding-top: 50px;
+  }
+  .wrapper-1, 
+  .wrapper-2 {
+    flex-basis: 0;
+    transform: none;
+  }
+  .section-contact {
+    flex-direction: column;
+    height: auto;
+    padding-top: 20px;
+  }
+  .wrapper-3,
+  .wrapper-4,
+  .wrapper-5 {
+    width: 100%;
+    padding-bottom: 30px;
+    h3 {
+      width: 100%;
+    }
   }
 }
